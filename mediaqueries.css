@@ -1,0 +1,10 @@
+/* Quand media screen est inferior à 1200px desktop-nav vas disparaitre
+ et hamburguer-nav aparaitre*/
+@media screen and (max-width: 1200px){
+    #desktop-nav{
+        display: none;
+    }
+    #hamburger-nav{
+        display: flex;
+    }
+}
