@@ -62,7 +62,15 @@ a:hover {
 }
 
 .logo {
-  font-size: 2rem;
+  
+}
+
+.logo img{
+  max-width: 50rem;
+  max-height: 30rem;
+  width: auto;
+  height: auto;
+  display: block;
 }
 
 .logo:hover {

@@ -7,6 +7,11 @@
   .about-containers {
     flex-wrap: wrap;
   }
+
+  .logo img{
+    max-width: 40rem;
+    max-height: 25rem;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -27,6 +32,11 @@
   #profile,
   .section-container {
     display: block;
+  }
+
+  .logo img{
+    max-width: 30rem;
+    max-height: 20rem;
   }
 
   .arrow {
@@ -62,6 +72,11 @@
   #profile {
     height: 83vh;
     margin-bottom: 0;
+  }
+
+  .logo img{
+    max-width: 20rem;
+    max-height: 10rem;
   }
 
   article {

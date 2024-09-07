@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portifolio</title>
+    <title>Mon Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">Esmagnoto Caio</div>
+      <div class="logo">
+        <img src="./assets/logo-pic_noir.png" alt="Logo Caio Esmagnoto">
+      </div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -21,7 +23,9 @@
     </nav>
 
     <nav id="hamburger-nav">
-      <div class="logo">Esmagnoto Caio</div>
+      <div class="logo">
+        <img src="./assets/logo-pic_noir.png" alt="Logo Caio Esmagnoto">
+      </div>
       <div class="hamburger-menu">
         <!--toggleMenu est une fonction pour fermer le hamburguer -->
         <div class="hamburger-icon" onclick="toggleMenu()">
@@ -46,13 +50,13 @@
         />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hello, I am</p>
+        <p class="section__text__p1">Salut, Je m'appelle</p>
         <h1 class="title">Esmagnoto Caio</h1>
-        <p class="section__text__p2">Develepeur Web</p>
+        <p class="section__text__p2">Développeur Web</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('./assets/resume-caio.pdf')"
           >
             Dowload CV
           </button>
@@ -65,21 +69,21 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn Profile"
             class="icon"
-            onclick="window.open('https://www.linkedin.com/in/caio-esmagnoto-614265142')"
+            onclick="location.href='https://linkedin.com/in/caio-esmagnoto-614265142'"
           />
           <img
             src="./assets/github.png"
             alt="My GitHub Profile"
             class="icon"
-            onclick="window.open('https://github.com/Esmagnoto')"
+            onclick="location.href='https://github.com/Esmagnoto'"
           />
         </div>
       </div>
     </section>
 
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
+      <p class="section__text__p1">En savoir plus</p>
+      <h1 class="title">À Propos de moi</h1>
       <div class="section-container">
         <div class="section__pic-container">
           <img
@@ -96,10 +100,12 @@
                 alt="Experience icon"
                 class="icon about-icon"
               />
-              <h3>Experience</h3>
+              <h3>Expérience</h3>
               <p>
-                2+ years <br />
-                Developeur Web
+                7 + ans Commerce <br />
+                
+                1 an Développeur Web<br />
+                
               </p>
             </div>
             <div class="details-container">
@@ -108,22 +114,24 @@
                 alt="Education icon"
                 class="icon about-icon"
               />
-              <h3>Education</h3>
+              <h3>Formations</h3>
               <p>
-                B.Sc Bachelors Degree<br />
-                M.Sc Masters Degree
+                Baccalauréat Général<br />
+                BUT - Bachelor Informatique en cours
               </p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-              ducimus reprehenderit cupiditate facere quasi error nostrum
-              laudantium deserunt aspernatur libero facilis beatae, dignissimos
-              dolor, magni laborum deleniti corporis temporibus quidem,
-              explicabo natus? Asperiores beatae sint praesentium non earum
-              voluptas. Sed quibusdam impedit ratione odit quas, temporibus
-              eligendi quidem sit hic.
+              Le premier ordinateur que j'ai connu était un petit « notebook » gris 
+              avec 2 gigabytes de mémoire RAM et un Intel duo core.
+               Je me rappelle de jouer à Half-Life Counter-Strike 1.6 
+               que mon père avait définitivement interdit de jouer. 
+               Depuis ça la technologie a évolué tellement vite.
+                 Aujourd’hui je suis toujours intéressé aux jeux vidéo, mais,
+                  peut-être que j’en développerai le mien.
+                   Je suis très curieux et je pense qu’il suffit de l’être 
+                   pour trouver quelque chose qui peut agréger un peu notre univers.
             </p>
           </div>
         </div>
@@ -138,11 +146,11 @@
 
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
+      <h1 class="title">Competences</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Develepeur Web</h2>
+            <h2 class="experience-sub-title">Informatique</h2>
             <!-- chaque "article" c'est une competence -->
             <div class="article-container">
               <article>
@@ -152,8 +160,8 @@
                   class="icon experience-icon"
                 />
                 <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
+                  <h3>HTML/CSS</h3>
+                  <p>Intermédiaire</p>
                 </div>
               </article>
               <article>
@@ -163,8 +171,8 @@
                   class="icon experience-icon"
                 />
                 <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
+                  <h3>Python/Java/C/C++</h3>
+                  <p>Intermédiaire</p>
                 </div>
               </article>
               <article>
@@ -174,8 +182,8 @@
                   class="icon experience-icon"
                 />
                 <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
+                  <h3>BDD SQL Oracle</h3>
+                  <p>Débutant</p>
                 </div>
               </article>
               <article>
@@ -185,8 +193,8 @@
                   class="icon experience-icon"
                 />
                 <div>
-                  <h3>JAVA SCRIPT</h3>
-                  <p>Basic</p>
+                  <h3>Hardware manutention</h3>
+                  <p>Intermédiaire</p>
                 </div>
               </article>
               <article>
@@ -196,8 +204,8 @@
                   class="icon experience-icon"
                 />
                 <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
+                  <h3>Git</h3>
+                  <p>Intermédiaire</p>
                 </div>
               </article>
               <article>
@@ -207,14 +215,14 @@
                   class="icon experience-icon"
                 />
                 <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
+                  <h3>Linux/Windows</h3>
+                  <p>Débutant</p>
                 </div>
               </article>
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Develepeur Web</h2>
+            <h2 class="experience-sub-title">Communication commerce</h2>
             <div class="article-container">
               <article>
                 <img
@@ -223,8 +231,8 @@
                   class="icon experience-icon"
                 />
                 <div>
-                  <h3>PostgreeSQL</h3>
-                  <p>Experienced</p>
+                  <h3>Gestion des Relations client</h3>
+                  <p>Avancé</p>
                 </div>
               </article>
               <article>
@@ -234,8 +242,8 @@
                   class="icon experience-icon"
                 />
                 <div>
-                  <h3>NOJS</h3>
-                  <p>Experienced</p>
+                  <h3>Administration/Organisation</h3>
+                  <p>Intermédiaire</p>
                 </div>
               </article>
               <article>
@@ -245,8 +253,8 @@
                   class="icon experience-icon"
                 />
                 <div>
-                  <h3>Python</h3>
-                  <p>Intermediate</p>
+                  <h3>Gestion des Stocks et Logistique</h3>
+                  <p>Intermédiaire</p>
                 </div>
               </article>
               <article>
@@ -256,8 +264,8 @@
                   class="icon experience-icon"
                 />
                 <div>
-                  <h3>JAVA</h3>
-                  <p>Basic</p>
+                  <h3>Gestion des Ventes</h3>
+                  <p>Intermédiaire</p>
                 </div>
               </article>
               <article>
@@ -267,8 +275,8 @@
                   class="icon experience-icon"
                 />
                 <div>
-                  <h3>GIT</h3>
-                  <p>Basic</p>
+                  <h3>Travail en équipe</h3>
+                  <p>Intermédiaire</p>
                 </div>
               </article>
               <article>
@@ -278,8 +286,8 @@
                   class="icon experience-icon"
                 />
                 <div>
-                  <h3>C</h3>
-                  <p>Experienced</p>
+                  <h3>Présentations Commerciales</h3>
+                  <p>Intermédiaire</p>
                 </div>
               </article>
             </div>
